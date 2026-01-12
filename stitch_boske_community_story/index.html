@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Boske Café Home Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1dc91d",
+                        "background-light": "#3d2b1f", // Warm Primary Brown
+                        "background-dark": "#2a1d15",
+                        "cream": "#f5f0e1",           // Secondary Cream
+                        "accent-green": "#1dc91d",    // Muted Accent Green
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #3d2b1f;
+    /* Primary Brown */
+    }
+.woodcut-border {
+    border: 2px solid #f5f0e1;
+    box-shadow: 4px 4px 0 #1dc91d
+    }
+.texture-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuC9xPIvpqgkDVP2ythCf-8dl_kEigM5yEeaEBlIUVxfvJdW0hX-i5pw4lGRZaAJ1pX4jJ_WBN8bkn1m1SrPp6BB1DPnNq0KZMHcksRGySXxc9oC0wjOXYtaySm4gFLfzgsB1yguueyoJvYc_0TpACXtsJ0jVL8u89FZqDON45TWrGLWuBdJiGtXUUm754IcI8OLX5VmYjxCx5IXXLToiP55hfg3_IZSs_r6ldS2_iqBlg_wU6wxLnz4hn2tFnsp0TDghTRNHxRuCUg);
+    opacity: 0.05;
+    pointer-events: none
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-cream font-display selection:bg-accent-green selection:text-background-light relative">
+<!-- Texture Overlay -->
+<div class="fixed inset-0 texture-overlay z-50"></div>
+<div class="layout-container flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-40 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-cream/10 px-6 lg:px-40 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-accent-green">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-cream text-2xl font-black uppercase tracking-tighter">Boske Café</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="hover:text-accent-green transition-colors font-medium" href="menu.html">Menu</a>
+<a class="hover:text-accent-green transition-colors font-medium" href="story.html">Community</a>
+<a class="hover:text-accent-green transition-colors font-medium" href="visit.html">Visit</a>
+<button class="bg-accent-green text-background-light px-6 py-2 rounded-lg font-bold hover:scale-105 transition-transform active:scale-95">
+                    Visit Us
+                </button>
+</nav>
+</header>
+<!-- HeroSection -->
+<main class="flex-1">
+<section class="px-6 lg:px-40 py-12 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<h1 class="text-cream text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter uppercase">
+                            Community-first <span class="text-accent-green">coffee</span> shop in Walworth
+                        </h1>
+<p class="text-cream/80 text-lg lg:text-xl max-w-lg leading-relaxed font-light">
+                            Experience the warmth of Boske, a local hub for artisan coffee and community vibes in the heart of SE17. Grounded in London's local character.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<a href="menu.html" class="bg-accent-green text-background-light px-10 py-4 rounded-xl font-black text-lg uppercase tracking-wider hover:bg-cream hover:text-background-light transition-all border-2 border-accent-green text-center">
+                                View Menu
+                            </a>
+<a href="story.html" class="border-2 border-cream text-cream px-10 py-4 rounded-xl font-black text-lg uppercase tracking-wider hover:bg-cream/10 transition-all text-center">
+                                Our Story
+                            </a>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-full h-full border-2 border-accent-green rounded-xl z-0"></div>
+<div class="relative z-10 aspect-[4/5] bg-cover bg-center rounded-xl shadow-2xl woodcut-border overflow-hidden" data-alt="Close up of steaming latte with leaf art in a ceramic cup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1Ky0aM72v7b16g3OnN7Ok7eiONGBFBS_6Fxuza3ohADvWAsI50gj9ocQyrfJc-O2XGPaGjE4oXG6toSGPxFPmSyjLB-zgbClM3MvK95TD2fow5kyWHTzHAKPwN_4wS2eIwetU_937dOOxEq0zIv8iP_YgbdeVYzoeubTP_ZtKAKZPuAPOAfhlhwyuteGbEu-zaS7JUbjPw4IlHLGwy34kTqubFdK9TS4Km5Fad0HJJ8UR_Nn8XGDWzEc2nzz98LGL33QbatVoMOY");'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Atmosphere Section -->
+<section class="bg-background-dark/50 py-20 px-6 lg:px-40" id="atmosphere">
+<div class="max-w-[1200px] mx-auto">
+<div class="mb-12 flex flex-col items-center text-center gap-4">
+<span class="text-accent-green uppercase tracking-[0.3em] font-bold text-sm italic">The Local Vibe</span>
+<h2 class="text-cream text-4xl lg:text-5xl font-black uppercase tracking-tight">Our Atmosphere</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="flex flex-col gap-4">
+<div class="aspect-square bg-cover bg-center rounded-xl woodcut-border" data-alt="Wood textures and coffee bags in cafe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxK739LOp4Mg_TA6Cg8zKPNc6_blrBkhTTIcWIf9wnWRddR5ifBOKrCnoLToCTBOiBrwxL2yJKU5i_cEPiah8uEoxozoR8tsXy2z1kqbcPdIu4C3IpRPnA5o-guSMx-4QJjzFyfHD5xKQAizDviXJ8a5oORBg4ZD7Yr66ZQCQq6dEYKhZmC_CYoZX7LzcIfNdLf-qQGGJWxgZzkxrQOSb-p_oZpE9JKHvPZV7rM_LHmWj60E_l2oNJ-_66dlDE6OzDc90vIMnQg9Y");'></div>
+<div class="aspect-[3/4] bg-cover bg-center rounded-xl woodcut-border" data-alt="Community gathered at a long wooden table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS0BMx1EZfSRf586CBxaQ22j91HYIIlZ_MLUrum876M6hyX8PZqHjO9wvy-l5XRVoJJpdhPRacZAL26bR7UQWaIZOYPlGk0Fr84yZqr68DsYQgymxaHYNjFTHVFX99Cwl4p7ASp7M8JLSVUySBBYEEr1Q698repJXf--9G-s-J9GK6_5VEgYF4vyOAk9KQvEN9mGERy01NAtwxfZDkbPO0HewPfN1uDUVk7oRC-14aFG1Vr8NUrFnk36cTbdtNdS2PSD1oTyJB49E");'></div>
+</div>
+<div class="flex flex-col gap-4 pt-8">
+<div class="aspect-[4/5] bg-cover bg-center rounded-xl woodcut-border" data-alt="Espresso machine pulling a shot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6iM3t3uJHI9otPFGnovZsZ7iwKB0Msm-6miMZsn0r5DaDt90LIc0R0SKA2Wg7j8Lv68k2f12tU_o_6S_Z9rG8Ty6WWA4o9CJZ6kIBCvf9dgfMSQaMWwsCTo69TvmX5dIlLEdtLDYtUaVN88WtGc2Ij-Ma8HUC1ShIJYqBR2kQHBGmP9GjDFlQeQXEfdjAE8EJW17b7XgvxjRtKN3NGIKlTBe7ozohO137p344r22qJCA_69-VSzUpDWJzs-lwkNaGOrOjRX3meNc");'></div>
+<div class="aspect-square bg-cover bg-center rounded-xl woodcut-border" data-alt="Freshly baked pastries on a display tray" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArjPrBw9shjR6mR9uoVglmrfE9jFnU6Ira9Ksbw0ivWiYPUUfiVQ66Yiff3v_rmll8dSCMqn_AXJAlcSOnDYyCIbkx_Nj_irNdofhJrwzKp0gFIeny3BU7Q0OZ2eWAnjGvPRZ7s3X-f0WkSAJozqaKTsj0F8d8rvehathTwmes5urKZDaJXwgOAhpjTXcWOsOODTEcOskWg43ThpxsPPR47GULQIVkj5W-yOu-2Omm0GeG9N5J2Berg0zpVffQ3_f2N6BpAKyuj8A");'></div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="aspect-square bg-cover bg-center rounded-xl woodcut-border" data-alt="Sunlight hitting a rustic wooden bench" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALVL2QNr2WJkeLwHTtN85K_B-dOX7KFzIeAvddEuYKBl7fNDLvlrQNKwfSPZHqvdzlojechVA-2S7zAiByPDKWCOgsqDARxAEVqZ55lNRw44pH_Z3Rx9GZVw6pQbuRRmKqZ7EaONXbRDYaKs9XCqT8SieJJ_S-Sy7yjZq9D-DEHkuE5J3mmKFg7taasNC11fWECPH78OW7HP4ocwx1-WggS8qzcw-n6-HCLSk7sqEFrlcFMVh2vMYOfFNCABHp9C__Iel_lchglMc");'></div>
+<div class="aspect-[3/4] bg-cover bg-center rounded-xl woodcut-border" data-alt="Local artist mural on the cafe wall" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB90NET0LglNDapA6CrT7P0enLoXycwZVCAmrxj-r5GhMzDCi0WhqlPc2R-kiF8qWBNtHRmQrljDb3jji8_FYDwLgXeekWGS23xkRo_FA8VbRZdcRF9mhPa3J5XQ9U1e_9qFxBM6rufT6-qKUyT14U2BGruZxbdOvgw0A3PdQfWTv-7at8suXakT1MwD3nFuyLJ8N1c8jeJGjfov4BUakYuG3wAaMA5HGX9BLnj-1LSSunh3c8RN3mrn7AA3VpaAUW2_XGTuqTToVY");'></div>
+</div>
+<div class="flex flex-col gap-4 pt-12">
+<div class="aspect-[4/5] bg-cover bg-center rounded-xl woodcut-border" data-alt="Outdoor seating with plants in Walworth" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKoehXrDJ5XiAJju48z6zUGY-NFJpygl-DfLmRRgXpYGeMlwaK66GvnN4OoTCrS80iuXEIineRfDiJOJOWXmgC98QlcWfnwogujOFoY9AGVnQa-ndBr8dSIows2od2-OP9g-X0FMMsGIcOc9_4JEW3a0OizLLCxkYi1tx_Lc9vwXgC26uiVkX9qmR9GyICXJBvVIAr9MekPj0pVQFy63kCZIGEKW_uWsQ8F4cdNGVc5jo_owKF7gz3v2HbeFNn8Db0Q5ktASE2eUA");'></div>
+<div class="aspect-square bg-cover bg-center rounded-xl woodcut-border" data-alt="Happy barista pouring milk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQ-LLAGmMa7hlf5mk9XkgEO5B62Ls9WMQKlepLq_3OCGxf4Ia5XNV58fdfJbNiV7vttqabteGXRqbRAOQXMFh6m4ANkhIFk5hs7_G3f0c0qP2JWO6_8LQee3OBNDDDk1zfdVry9guhMl9VO1Kl9ZZ4V6th8l52fM4JZ3m2quv_TOGCkPJOZVl3IoN8fLThURqpEDk1pN_e_RYfULGuftrI5gAKr9aq4rGpE80i_ZtV2-DKG5jLVNAXSKyAm6Mx4g_5_9GrxjBP6A8");'></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Preview (The "Digital Chalkboard") -->
+<section class="py-24 px-6 lg:px-40" id="menu">
+<div class="max-w-[1000px] mx-auto border-4 border-cream p-8 lg:p-16 relative">
+<!-- Chalkboard Accents -->
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-background-light px-6">
+<h2 class="text-accent-green text-3xl font-black uppercase tracking-widest italic">The Menu Board</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- House Coffee -->
+<div class="space-y-8">
+<h3 class="text-accent-green text-2xl font-black uppercase border-b border-accent-green/30 pb-2">House Roast</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">Walworth Blend Espresso</p>
+<p class="text-sm text-cream/60 italic">Notes of dark chocolate &amp; orange</p>
+</div>
+<p class="font-black text-xl">£3.20</p>
+</div>
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">Oat Milk Flat White</p>
+<p class="text-sm text-cream/60 italic">Our community favorite</p>
+</div>
+<p class="font-black text-xl">£3.80</p>
+</div>
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">Batch Brew Filter</p>
+<p class="text-sm text-cream/60 italic">Rotating seasonal single origin</p>
+</div>
+<p class="font-black text-xl">£3.00</p>
+</div>
+</div>
+</div>
+<!-- Sourdough & Pastry -->
+<div class="space-y-8">
+<h3 class="text-accent-green text-2xl font-black uppercase border-b border-accent-green/30 pb-2">Kitchen</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">Avocado Sourdough</p>
+<p class="text-sm text-cream/60 italic">Chilli flakes &amp; local olive oil</p>
+</div>
+<p class="font-black text-xl">£8.50</p>
+</div>
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">Seasonal Galette</p>
+<p class="text-sm text-cream/60 italic">Hand-folded artisan pastry</p>
+</div>
+<p class="font-black text-xl">£4.20</p>
+</div>
+<div class="flex justify-between items-end group cursor-default">
+<div>
+<p class="font-bold text-xl uppercase group-hover:text-accent-green transition-colors">House Toasted Banana Bread</p>
+<p class="text-sm text-cream/60 italic">With espresso butter</p>
+</div>
+<p class="font-black text-xl">£5.50</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="bg-cream text-background-light font-black uppercase px-8 py-3 rounded-lg hover:bg-accent-green transition-colors">
+                            Download Full Menu
+                        </button>
+</div>
+</div>
+</section>
+<!-- Visit Snapshot -->
+<section class="bg-background-dark py-20 px-6 lg:px-40" id="visit">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-10">
+<div>
+<span class="text-accent-green uppercase font-black tracking-widest text-sm italic">Find Us</span>
+<h2 class="text-cream text-5xl font-black uppercase mt-2">Come Say Hi</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="text-accent-green font-bold uppercase tracking-widest text-xs">Address</h4>
+<p class="text-xl font-medium leading-relaxed">
+                                    142 Walworth Road<br/>
+                                    SE17 1JL<br/>
+                                    London
+                                </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-accent-green font-bold uppercase tracking-widest text-xs">Opening Hours</h4>
+<ul class="text-lg space-y-1">
+<li class="flex justify-between"><span>Mon - Fri</span> <span class="font-bold">07:30 - 17:00</span></li>
+<li class="flex justify-between"><span>Sat</span> <span class="font-bold">08:30 - 18:00</span></li>
+<li class="flex justify-between"><span>Sun</span> <span class="font-bold">09:00 - 16:00</span></li>
+</ul>
+</div>
+</div>
+<div class="flex gap-6 items-center">
+<a class="w-12 h-12 rounded-full border border-cream/30 flex items-center justify-center hover:border-accent-green hover:text-accent-green transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-cream/30 flex items-center justify-center hover:border-accent-green hover:text-accent-green transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-cream/30 flex items-center justify-center hover:border-accent-green hover:text-accent-green transition-all" href="#">
+<span class="material-symbols-outlined">phone</span>
+</a>
+</div>
+</div>
+<div class="h-[400px] w-full rounded-xl woodcut-border overflow-hidden grayscale contrast-125 opacity-80 bg-cover bg-center" data-alt="Stylized illustrative map of Walworth London area" data-location="Walworth, London" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmqs3bi6oGq9wvBhbkFdUCIEoRFHkiXjc0z2ajoIPDXHfMlBdObHN8Th7KWMN4tFza8CgscAH2bdwjBbifzpqU26RhnKJFeAuKwOfxBOTczzlweLqDyxjH9B2qbAY_4f9-adDNfjxbg2kvrBVwn_0Sv0OGwIFJNUjNsK9_yXL8L2EkqxN1dx3WXQhk8GXd63Urph4HPQtxNmzrdBhmTPzLqIOaLKkkc49syg8--bvo5m0N6BelHBC9MSrHO01hFWcoe6MOqkCLoCM");'>
+<div class="w-full h-full flex items-center justify-center">
+<div class="bg-background-light p-4 rounded-lg shadow-xl woodcut-border animate-bounce">
+<span class="material-symbols-outlined text-accent-green text-4xl">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light border-t border-cream/10 px-6 lg:px-40 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<span class="text-accent-green material-symbols-outlined text-3xl">coffee</span>
+<h2 class="text-cream text-xl font-black uppercase tracking-tighter">Boske Café</h2>
+</div>
+<p class="text-cream/40 text-sm">© 2024 Boske Café SE17. Independent &amp; Community Focused.</p>
+<div class="flex gap-8 text-sm uppercase font-bold tracking-widest">
+<a class="hover:text-accent-green transition-colors" href="#">Instagram</a>
+<a class="hover:text-accent-green transition-colors" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
