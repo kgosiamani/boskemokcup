@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Boske Community &amp; Story</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1dc91d",
+            "background-light": "#F9F7F2", /* Soft Cream */
+            "background-dark": "#112111",
+            "ink-brown": "#2D241E", /* Dark Ink Brown */
+          },
+          fontFamily: {
+            "display": ["Work Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: "Work Sans", sans-serif;
+      color: #2D241E
+    }
+
+    .paper-texture {
+      background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAnDO3NTzT7BDG0qHfezxnIe5YcchA9E8aqAaG1GkyI8lEgCSjEqn5MiFHzS94mxkFWMEIKNRNc88F5N01bt-Q40r6hmIHel54H6tWd_xzXOLA-hb1cV0Xq334jNCOGnECMILJ_QrwJpOlVNzD96KeIwJn151B9hdzo5ICHXrsLtqe9rEH0qAd1yZJlW60txibSDjDgEREK0CzGKluYWgd7zwVuTeXUu2Jiiw6qpLTb43YeRouYZIu7iocrOzvnFwgFZ3ZY3dPldRw)
+    }
+
+    .scrapbook-rotate-left {
+      transform: rotate(-2deg)
+    }
+
+    .scrapbook-rotate-right {
+      transform: rotate(2deg)
+    }
+
+    .woodcut-border {
+      border: 2px solid #2D241E
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark paper-texture min-h-screen">
+  <!-- Floating Navigation -->
+  <header
+    class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-ink-brown/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">nature_people</span>
+        <h2 class="text-ink-brown dark:text-background-light text-2xl font-black tracking-tighter uppercase">Boske</h2>
+      </div>
+      <nav class="hidden md:flex items-center gap-10">
+        <a class="text-ink-brown dark:text-background-light text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="index.html">Home</a>
+        <a class="text-ink-brown dark:text-background-light text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="story.html">Story</a>
+        <a class="text-ink-brown dark:text-background-light text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="menu.html">Menu</a>
+        <a class="text-ink-brown dark:text-background-light text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="visit.html">Visit</a>
+      </nav>
+      <a href="visit.html"
+        class="bg-ink-brown text-background-light dark:bg-primary dark:text-ink-brown px-6 py-2 rounded-full text-sm font-bold uppercase tracking-tighter hover:scale-105 transition-transform text-center">
+        Find Us
+      </a>
+    </div>
+  </header>
+  <main class="pt-24 pb-20">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 mb-32">
+      <div class="relative flex flex-col items-center">
+        <div
+          class="w-full h-[600px] overflow-hidden rounded-xl scrapbook-rotate-left shadow-xl mb-12 border-4 border-white">
+          <div class="w-full h-full bg-cover bg-center"
+            data-alt="Warm interior of a cozy London cafe with wooden furniture"
+            style="background-image: linear-gradient(rgba(45,36,30,0.2), rgba(45,36,30,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmfr1Y9tFAFBV25tVC93KvKFBzHOTjwv9pkeUb-_fNc232PnEzSgvwyhCA30gmbNUhq_Eun3UbD9rYK4haotAct_yZKy8oARZSNXYTHE76DdnlSbraDluxZ1__5jFkY1dc_882mUrfPl8-T1137iymuTKMXnwRl15R7TeT_meHVBpnD3IgHEHtEHSAzyWxdPPDvPFGLBIlJKqWv6pKSDEBn0liFUisCAvaI1LX46CFzGPqNAsKDULVw_HfB1LQ3985z4Ko28whuC0');">
+          </div>
+        </div>
+        <div
+          class="absolute bottom-[-40px] md:right-10 bg-primary p-8 md:max-w-xl scrapbook-rotate-right shadow-2xl border-2 border-ink-brown">
+          <h1 class="text-ink-brown text-4xl md:text-6xl font-black leading-[0.9] mb-4">
+            ROOTED IN LONDON, BREWED FOR THE COMMUNITY.
+          </h1>
+          <p class="text-ink-brown font-medium text-lg italic">
+            A digital space for our neighborhood, inspired by the warmth of our physical shop.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Our Story / Zine Layout -->
+    <section class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-40">
+      <div class="md:col-span-5 space-y-8">
+        <div class="flex items-center gap-2 text-primary">
+          <span class="material-symbols-outlined">eco</span>
+          <span class="font-bold tracking-widest uppercase text-xs">Since 2014</span>
+        </div>
+        <h2 class="text-5xl font-black text-ink-brown leading-tight">Our Journey From <span
+            class="text-primary italic">Bean</span> to Boske</h2>
+        <div class="space-y-6 text-ink-brown/80 text-lg leading-relaxed">
+          <p>
+            Boske began as a simple idea: that coffee should be a catalyst for community. We took our name from the old
+            word for forest, representing a place of growth, shelter, and interconnectedness.
+          </p>
+          <p>
+            Our space in London is designed to be your second living room. It’s where the clinking of porcelain meets
+            the hum of neighborhood gossip, and where every cup tells a story of local craftsmanship.
+          </p>
+        </div>
+        <div class="pt-4">
+          <button
+            class="border-2 border-ink-brown px-8 py-3 rounded font-bold uppercase hover:bg-ink-brown hover:text-background-light transition-all">Read
+            our full manifesto</button>
+        </div>
+      </div>
+      <div class="md:col-span-7 grid grid-cols-2 gap-4 relative">
+        <div class="pt-12">
+          <div class="bg-white p-3 shadow-lg scrapbook-rotate-left mb-6">
+            <img class="w-full aspect-[4/5] object-cover"
+              data-alt="Barista carefully pouring latte art into a ceramic cup"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdEEyFPha56dvOvk23EpflChYJqXpUTjjbVrq0iYAUpNvkk8306YQEn94ID9kjZfX4eETtfRSDEwq4Mxpo9h2L8Pz2iChBZFoomCKfLSsCgWzZOXx6AKMrqXdk6Uk8ooejWH3lHh8iHa8Htf-dwGM_ZcNnuPLBJIv-ca-UD1dTRKYWvOxO-UnILzrmrWm9XT5cLGzx6B_amZIMQs9KrnlkKeJzn5D6nVt0XqTBflBRRq4lWakam4K0D3VDcWUY9W46SGftOKDlGxQ" />
+            <p class="mt-2 font-display italic text-sm">The early morning ritual.</p>
+          </div>
+        </div>
+        <div>
+          <div class="bg-white p-3 shadow-lg scrapbook-rotate-right">
+            <img class="w-full aspect-square object-cover"
+              data-alt="Community gathered around a long wooden table in a cafe"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6udebzdb3MaVCQLyv_aNbejmQ540EQs3w5obDYuxJKozcU9_4z_LABLIBiBgweXUW-6Wa1r6Cgd4fc_o3A08VwGDg4E4Fku9Gbjht56d9AFxN-wAA4oUwVoDMR5jEPswpfLY0T0yBGc-ApHLGrwMQgYBCF-rD_GiQCo3O72viQkwJG_Pz5ntKc_qIM_qPv5Yf77NiGd6iGzn3XP6aAWbtc82fm3_jVPt4CzbtnwhmmhsNgPprX5HfPxXpRwmZuCZJF0lXYLts_ao" />
+            <p class="mt-2 font-display italic text-sm">The Community Table.</p>
+          </div>
+        </div>
+        <!-- Leaf Accent Icon -->
+        <div class="absolute -top-10 right-1/2 translate-x-1/2 text-primary/30">
+          <span class="material-symbols-outlined text-[120px]">psychology_alt</span>
+        </div>
+      </div>
+    </section>
+    <!-- Community Philosophy / Woodcut Elements -->
+    <section class="bg-ink-brown text-background-light py-24 mb-40 overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+          <span class="material-symbols-outlined text-primary text-5xl mb-4">groups</span>
+          <h2 class="text-5xl font-black mb-6 uppercase tracking-tighter">Community-First Philosophy</h2>
+          <p class="text-xl text-background-light/70">We don't just serve coffee; we foster connections. From hosting
+            local art shows to supporting neighborhood gardens, Boske is a node in the London ecosystem.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="p-8 border border-background-light/20 rounded-xl hover:border-primary transition-colors group">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">local_shipping</span>
+            <h3 class="text-2xl font-bold mb-4 italic uppercase">Local Sourcing</h3>
+            <p class="text-background-light/60">Our milk comes from the family farm 20 miles away, and our pastries are
+              delivered by bike every morning by Sarah from the local bakery.</p>
+          </div>
+          <div class="p-8 border border-background-light/20 rounded-xl hover:border-primary transition-colors group">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">event_note</span>
+            <h3 class="text-2xl font-bold mb-4 italic uppercase">Gatherings</h3>
+            <p class="text-background-light/60">Weekly book clubs, monthly jazz nights, and seasonal workshops. Our
+              calendar is built by the people who walk through our doors.</p>
+          </div>
+          <div class="p-8 border border-background-light/20 rounded-xl hover:border-primary transition-colors group">
+            <span
+              class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">recycling</span>
+            <h3 class="text-2xl font-bold mb-4 italic uppercase">Sustainable Growth</h3>
+            <p class="text-background-light/60">Zero-waste is our goal. We compost all our grounds and offer them back
+              to the neighborhood gardeners for free.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative Large Leaves -->
+      <div class="absolute -bottom-20 -left-20 opacity-10 pointer-events-none">
+        <span class="material-symbols-outlined text-[400px]">filter_vintage</span>
+      </div>
+    </section>
+    <!-- Local Map Section -->
+    <section class="max-w-7xl mx-auto px-6 mb-40">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <div class="bg-ink-brown/5 p-4 rounded-xl woodcut-border scrapbook-rotate-left">
+            <div
+              class="h-[450px] w-full rounded bg-background-light overflow-hidden grayscale contrast-125 border border-ink-brown/20 relative">
+              <!-- Stylized Map Placeholder -->
+              <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                <span class="material-symbols-outlined text-[300px]">map</span>
+              </div>
+              <div class="relative z-10 w-full h-full p-8 flex flex-col justify-between">
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 rounded-full bg-primary animate-pulse"></div>
+                    <span class="font-black text-xl uppercase italic">Boske Main Shop</span>
+                  </div>
+                  <div class="flex items-center gap-3 opacity-50 pl-7">
+                    <div class="w-3 h-3 rounded-full bg-ink-brown"></div>
+                    <span class="font-bold text-sm uppercase">Baker Street Partners</span>
+                  </div>
+                  <div class="flex items-center gap-3 opacity-50 pl-7">
+                    <div class="w-3 h-3 rounded-full bg-ink-brown"></div>
+                    <span class="font-bold text-sm uppercase">Regent's Garden Supplies</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-ink-brown text-background-light p-4 scrapbook-rotate-right text-xs uppercase tracking-widest font-bold">
+                  Our London Neighborhood
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 space-y-8">
+          <h2 class="text-5xl font-black text-ink-brown uppercase tracking-tighter">The Local <span
+              class="text-primary italic">Map</span></h2>
+          <p class="text-lg text-ink-brown/70 leading-relaxed">
+            We are proud to be part of a vibrant ecosystem of independent creators and producers. Every partner we work
+            with is a friend, and every ingredient has a face behind it.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-4 group cursor-pointer">
+              <span
+                class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">arrow_outward</span>
+              <span class="text-xl font-bold border-b-2 border-primary/20 hover:border-primary">The Flour Mill</span>
+            </li>
+            <li class="flex items-center gap-4 group cursor-pointer">
+              <span
+                class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">arrow_outward</span>
+              <span class="text-xl font-bold border-b-2 border-primary/20 hover:border-primary">Regent's Dairy
+                Co.</span>
+            </li>
+            <li class="flex items-center gap-4 group cursor-pointer">
+              <span
+                class="material-symbols-outlined text-primary group-hover:rotate-45 transition-transform">arrow_outward</span>
+              <span class="text-xl font-bold border-b-2 border-primary/20 hover:border-primary">The Coffee Roaster
+                Guild</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Final CTA / Hand-stamped card -->
+    <section class="max-w-3xl mx-auto px-6 text-center">
+      <div
+        class="bg-primary/20 p-12 rounded-xl border-4 border-primary border-dashed scrapbook-rotate-right relative overflow-hidden">
+        <div class="relative z-10">
+          <h2 class="text-4xl font-black text-ink-brown mb-6">COME SAY HELLO.</h2>
+          <p class="text-xl text-ink-brown mb-8 font-medium italic">Our doors are open, and the kettle is always on.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="visit.html"
+              class="bg-ink-brown text-background-light px-10 py-4 rounded font-black uppercase tracking-tighter hover:scale-105 transition-transform text-center">Get
+              Directions</a>
+            <a href="menu.html"
+              class="bg-white text-ink-brown border-2 border-ink-brown px-10 py-4 rounded font-black uppercase tracking-tighter hover:scale-105 transition-transform text-center">View
+              Menu</a>
+          </div>
+        </div>
+        <div class="absolute top-[-20px] left-[-20px] opacity-10">
+          <span class="material-symbols-outlined text-[150px]">coffee</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-background-light dark:bg-background-dark border-t border-ink-brown/10 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-2xl">nature_people</span>
+        <h2 class="text-ink-brown dark:text-background-light text-xl font-black uppercase tracking-tighter">Boske</h2>
+      </div>
+      <div class="text-ink-brown/50 text-xs font-bold uppercase tracking-widest">
+        © 2024 Boske Café London. Community-First Coffee.
+      </div>
+      <div class="flex gap-6">
+        <a class="text-ink-brown/60 hover:text-primary transition-colors uppercase text-xs font-black tracking-widest"
+          href="#">Instagram</a>
+        <a class="text-ink-brown/60 hover:text-primary transition-colors uppercase text-xs font-black tracking-widest"
+          href="#">Twitter</a>
+        <a class="text-ink-brown/60 hover:text-primary transition-colors uppercase text-xs font-black tracking-widest"
+          href="#">Newsletter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
